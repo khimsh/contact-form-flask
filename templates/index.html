@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action='/submit' method="POST">
+    <legend>Send message</legend>
+
+    <div class="">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+    </div>
+    <div class="">
+        <label for="email">E-Mail</label>
+        <input type="email" name="email" id="email">
+    </div>
+    <div class="">
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" id="subject">
+    </div>
+    <div class="">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="4"></textarea>
+    </div>
+    <button type="submit">Send E-Mail</button>
+</form>
+{% endblock %}
